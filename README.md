@@ -10,14 +10,19 @@ To access and download the high-resolution images used in this project, visit th
 
 # Installation
 1. Clone the repository.
-2. Install the required dependencies:
+2. Navigate to the Ocean_Lens Folder:
+   ```bash
+   cd Ocean_Lens
+4. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
-4. To train the model with custom inputs, Run:
+5. To train the model with custom inputs, Run:
     ```bash
    python train.py
-5. To test the model, Run:
-```bash
+6. To test the model, Run:
+   ```bash
    python inference.py
 
+# Check out our work: 
+   https://arxiv.org/html/2411.13230v1
 
