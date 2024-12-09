@@ -10,6 +10,8 @@ To access and download the high-resolution images used in this project, visit th
 
 # Installation
 1. Clone the repository.
-2. Install the required dependencies:
--------pip install -r requirements.txt  
+2. Install the required dependencies: pip install -r requirements.txt
+3. To train the model with custom inputs, Run: python train.py
+4. To test the model, Run: python inference.py
+
 
