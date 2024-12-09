@@ -7,9 +7,9 @@ Watch the Demonstration of our work on the above-mentioned datasets given in the
 
 To access and download the high-resolution images used in this project, visit the following link: [Explore High-Resolution Images here !](https://drive.google.com/drive/folders/1qQ6tYtNdvts17eMQOew_XH8ubdNWu5ZG)
 
-#   How to run OceanLens?
-Installation
-Clone the repository.
-Install the required dependencies:
-pip install -r requirements.txt  
+
+# Installation
+1. Clone the repository.
+2. Install the required dependencies:
+-------pip install -r requirements.txt  
 
