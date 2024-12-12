@@ -18,7 +18,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def load_checkpoint(checkpoint_path, bs_model, da_model, bs_optimizer, da_optimizer):
     with gzip.open(checkpoint_path, 'rb') as f:
-        checkpoint = torch.load(f)
+        checkpoint = torch.load(f, map_location=torch.device('cuda' if torch.cuda.is_available() else 'cpu'))
     bs_model.load_state_dict(checkpoint['bs_model_state_dict'])
     da_model.load_state_dict(checkpoint['da_model_state_dict'])
     bs_optimizer.load_state_dict(checkpoint['bs_optimizer_state_dict'])
