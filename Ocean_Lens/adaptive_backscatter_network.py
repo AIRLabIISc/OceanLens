@@ -44,3 +44,5 @@ class BackscatterNet(nn.Module):
         I_D = image - backscatter_corr
 
         return I_D, backscatter_comp
+        
+# similary for N layers
