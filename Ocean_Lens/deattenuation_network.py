@@ -59,7 +59,7 @@ class DeattenuateNet(nn.Module):
         return correction_factor_depth, I
 
 
-
+# similary for N layers
 
 
     
