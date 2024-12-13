@@ -43,7 +43,7 @@ class DeattenuateNet(nn.Module):
         
         # Calculate b_d for attenuation -- changing number of exponentials
         #b_d = torch.stack(tuple(
-         #   torch.sum(attn_conv[:, i:i + 3, :, :] * self.relu(self.a_f[i:i + ]), dim=1) for i in
+         #   torch.sum(attn_conv[:, i:i + 3, :, :] * self.relu(self.a_f[i:i +3 ]), dim=1) for i in
          #   range(0, 6, 2)), dim=1) #3 exponentials
         
 
