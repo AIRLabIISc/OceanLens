@@ -46,7 +46,7 @@ class BackscatterNet(nn.Module):
 
         # Backscatter calculation
         I_Bc = self.I_B_infinity * (1 - torch.exp(-b1_conv3)) + self.I_B_prime * torch.exp(-b2_conv3)
-        backscatter = self.sigmoid(I_Bc)
+        backscatter_comp = self.sigmoid(I_Bc)
 
         # Masking backscatter and calculating the direct component
         backscatter_corr = backscatter_comp * (depth > 0.).repeat(1, 3, 1, 1)
@@ -167,7 +167,7 @@ class BackscatterNet(nn.Module):
 
         # Backscatter calculation
         I_Bc = self.I_B_infinity * (1 - torch.exp(-b1_conv4)) + self.I_B_prime * torch.exp(-b2_conv4)
-        backscatter = self.sigmoid(I_Bc)
+        backscatter_comp = self.sigmoid(I_Bc)
 
         # Masking backscatter and calculating the direct component
         backscatter_corr = backscatter_comp * (depth > 0.).repeat(1, 3, 1, 1)
