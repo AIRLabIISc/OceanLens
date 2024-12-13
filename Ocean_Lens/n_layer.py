@@ -75,7 +75,7 @@ class DeattenuateNet(nn.Module):
         
         self.output_act = nn.Sigmoid()
 
-    def forward(self, direct, depth):
+    def forward(self, I_D, depth):
         # Pass depth through attenuation convolution layer
         deattn_conv = torch.exp(-self.relu(self.attenuation_conv(depth)))
         
@@ -199,7 +199,7 @@ class DeattenuateNet(nn.Module):
         
         self.output_act = nn.Sigmoid()
 
-    def forward(self, direct, depth):
+    def forward(self, I_D, depth):
         # Pass depth through attenuation convolution layer
         deattn_conv = torch.exp(-self.relu(self.attenuation_conv(depth)))
         
@@ -327,7 +327,7 @@ class DeattenuateNet(nn.Module):
         
         self.output_act = nn.Sigmoid()
 
-    def forward(self, direct, depth):
+    def forward(self, I_D, depth):
         # Pass depth through attenuation convolution layer
         deattn_conv = torch.exp(-self.relu(self.attenuation_conv(depth)))
         
@@ -470,7 +470,7 @@ class DeattenuateNet(nn.Module):
         
         self.output_act = nn.Sigmoid()
 
-    def forward(self, direct, depth):
+    def forward(self, I_D, depth):
         # Pass depth through attenuation convolution layer
         deattn_conv = torch.exp(-self.relu(self.attenuation_conv(depth)))
         
