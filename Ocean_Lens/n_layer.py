@@ -98,7 +98,7 @@ class DeattenuateNet(nn.Module):
         correction_factor_depth = correction_factor * ((depth == 0.) / correction_factor + (depth > 0.))
         
         # Final output 
-         I = correction_factor_depth * I_D * self.whitebalance
+        I = correction_factor_depth * I_D * self.whitebalance
         
         # Handle NaN values in I
         nanmask = torch.isnan(I)
@@ -221,7 +221,7 @@ class DeattenuateNet(nn.Module):
         correction_factor_depth = correction_factor * ((depth == 0.) / correction_factor + (depth > 0.))
         
         # Final output I
-         I = correction_factor_depth * I_D * self.whitebalance
+        I = correction_factor_depth * I_D * self.whitebalance
         
         # Handle NaN values in I
         nanmask = torch.isnan(I)
@@ -350,7 +350,7 @@ class DeattenuateNet(nn.Module):
         correction_factor_depth = correction_factor * ((depth == 0.) / correction_factor + (depth > 0.))
         
         # Final output I
-         I = correction_factor_depth * I_D * self.whitebalance
+        I = correction_factor_depth * I_D * self.whitebalance
         
         # Handle NaN values in I
         nanmask = torch.isnan(I)
@@ -494,7 +494,7 @@ class DeattenuateNet(nn.Module):
         correction_factor_depth = correction_factor * ((depth == 0.) / correction_factor + (depth > 0.))
         
         # Final output I
-         I = correction_factor_depth * I_D * self.whitebalance
+        I = correction_factor_depth * I_D * self.whitebalance
         
         # Handle NaN values in I
         nanmask = torch.isnan(I)
