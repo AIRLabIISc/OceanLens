@@ -23,7 +23,10 @@ To access and download the high-resolution images used in this project, visit th
    ```bash
    python inference.py
 
-#Testing 
+# Testing
+See Model Checkpoints (Sample) for our training checkpoints
+
+During training, the model saves checkpoints at different stages. You can use these checkpoints to run inference.
 
 # Check out our work: 
    https://arxiv.org/html/2411.13230v1
