@@ -23,6 +23,8 @@ To access and download the high-resolution images used in this project, visit th
    ```bash
    python inference.py
 
+#Testing 
+
 # Check out our work: 
    https://arxiv.org/html/2411.13230v1
 
