@@ -6,6 +6,8 @@ This folder contains code to load and use the trained model checkpoints.
 - `OceanLens.py`: Main model architecture and training utilities
 - `Oceanlens_inf.py`: Script to run inference using saved model checkpoints
 - `Checkpoints/`: Folder containing saved model weights
+
+  
 These files are **only meant for running our provided checkpoints**
 
 ### How to Run
