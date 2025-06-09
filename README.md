@@ -24,7 +24,7 @@ To access and download the high-resolution images used in this project, visit th
    python inference.py
 
 # Testing
-See Model Checkpoints (Sample) for our training checkpoints
+See Model Checkpoints (Sample) of our training.
 
 During training, the model saves checkpoints at different stages. You can use these checkpoints to run inference.
 
